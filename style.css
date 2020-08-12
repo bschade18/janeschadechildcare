@@ -125,3 +125,24 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
+/* About */
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Services */
+
+#services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Contact */
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
