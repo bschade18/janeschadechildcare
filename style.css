@@ -61,6 +61,7 @@ p {
   position: sticky;
   top: 0;
   background-color: navy;
+  background-color: #5d2f86;
   color: #fff;
 }
 
@@ -82,8 +83,22 @@ p {
   margin-right: 10px;
 }
 
-/* Home */
+#navbar ul li a:hover {
+  border-bottom: 2px solid #ffe000;
+  /* color: yellow; */
+}
+.current {
+  border-bottom: 2px solid #ffe000;
+}
 
+/* Home */
+#main-heading i {
+  color: #e31b23;
+  transition: transform 0.2s;
+}
+#main-heading i:hover {
+  transform: scale(1.25);
+}
 #home {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -92,6 +107,12 @@ p {
 #main-heading {
   text-align: center;
   margin-top: 1.5rem;
+}
+
+#main-heading span {
+  /* background: #ffe000; */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 #home .home-container-left {
@@ -128,6 +149,11 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+address h4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 
 /* Footer */
@@ -236,7 +262,13 @@ p {
 }
 
 #contact form input[type='submit'] {
-  background-color: #6a1400;
-  border: 1px solid #6a1400;
-  color: #fff;
+  background-color: #ffe000;
+  border: 1px solid #ffe000;
+  color: #000;
+}
+
+#contact form input[type='submit']:hover {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #ffe000;
 }
