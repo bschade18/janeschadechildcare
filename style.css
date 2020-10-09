@@ -20,7 +20,7 @@ img {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Utility Class */
@@ -85,10 +85,20 @@ p {
 
 #navbar ul li a:hover {
   border-bottom: 2px solid #ffe000;
-  /* color: yellow; */
 }
 .current {
   border-bottom: 2px solid #ffe000;
+}
+
+/* Footer */
+
+#footer .container {
+  border-top: 0.1px solid #5d2f86;
+}
+
+#copyright {
+  display: block;
+  margin: auto;
 }
 
 /* Home */
@@ -102,6 +112,7 @@ p {
 #home {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
 }
 
 #main-heading {
@@ -127,6 +138,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #f9f9f9;
+  background-color: #f3f3f3;
 }
 
 #home .home-container-right-left {
@@ -137,7 +149,7 @@ p {
 }
 
 #home .home-container-left img {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 #home .home-container-right-left img {
@@ -168,16 +180,18 @@ address h4 {
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
 }
 
 #about .about-left,
 #about .about-right {
   height: 100vh;
+  background-color: #f3f3f3;
 }
 
 #about .about-left img {
   display: block;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 #about .about-right {
@@ -197,10 +211,12 @@ address h4 {
 #services {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
 }
 
 #services .services-left {
   padding: 1.5rem;
+  background-color: #f3f3f3;
 }
 
 #services .services-left h1,
@@ -232,12 +248,17 @@ address h4 {
 #contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+}
+.contact-left {
+  padding: 1.5rem;
+  background-color: #f3f3f3;
 }
 
 #contact img {
   display: block;
   width: 480px;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 #contact form {
