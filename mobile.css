@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+  /* #about .about-content {
+    display: block;
+  } */
+
+  /* #about .about-content .about-image img {
+    display: none;
+  } */
+
+  #home,
+  #about,
+  #services,
+  #contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ipad and below */
+@media (max-width: 768px) {
+  #navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+}

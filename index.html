@@ -6,7 +6,16 @@
     <title>Jane Schade ChildCare</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      rel="stylesheet"
+      media="screen and (max-width: 900px)"
+      href="mobile.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
       rel="stylesheet"
     />
 
@@ -18,10 +27,10 @@
   <body>
     <nav id="navbar">
       <div class="container">
-        <div>
+        <h1 class="logo">
           <i class="fas fa-home"></i>
           Jane Schade Child Care
-        </div>
+        </h1>
         <ul>
           <li>
             <a href="index.html" class="current">Home</a>
@@ -35,17 +44,25 @@
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
+          <li>
+            <a class="phone" href="tel:+14403335005">440.333.5005</a>
+          </li>
+          <!-- <div id="examples">
+            <div class="example">
+              <span class="hover hover-3">This underline goes outwards</span>
+            </div>
+          </div> -->
         </ul>
       </div>
     </nav>
 
     <h1 id="main-heading"><span>Your Trusted Choice for Childcare</span></h1>
     <h2 id="main-heading">
-      <span>Our Difference - We add the love!!</span
+      <span>Our Difference &mdash; We add the love!!</span
       ><i class="fas fa-heart"></i>
     </h2>
     <div id="home" class="container py-3">
-      <div class="home-container-left p-3">
+      <div class="home-container-left p-2">
         <p>
           When looking for child care, look for a facility that goes beyond
           traditional child care. When you entrust your child with a loving,
@@ -59,21 +76,26 @@
         </p>
         <img src="img/child1.jpg" alt="child" />
       </div>
-      <div class="home-container-right p-3">
+      <div class="home-container-right p-2">
         <div class="home-container-right-left">
           <img src="img/child2.jpg" alt="child" />
           <img src="img/child3.jpg" alt="child" />
         </div>
 
         <div class="home-container-right-right">
-          <h3>Call Us Today!</h3>
-          <address>
-            <h4>Jane Schade Child Care</h4>
-            <h4>2734 Devon Hill Road</h4>
-            <h4>Rocky River, Ohio</h4>
-            <h4>440-333-5005</h4>
-            <h4>janeschadechildcare@gmail.com</h4>
-          </address>
+          <div>
+            <h3>Call Us Today!</h3>
+            <br />
+            <address>
+              <h4>Jane Schade Child Care</h4>
+              <h4>2734 Devon Hill Road</h4>
+              <h4>Rocky River, Ohio</h4>
+              <br />
+              <h4>440-333-5005</h4>
+              <br />
+              <h4>janeschadechildcare@gmail.com</h4>
+            </address>
+          </div>
           <img src="img/child4.jpg" alt="child on swing" />
         </div>
       </div>

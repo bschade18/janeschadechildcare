@@ -6,7 +6,10 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-family: 'Libre Franklin', sans-serif;
+  /* font-weight: bold; */
+  background-color: #f3f3f3;
+  background-color: #edeef0;
 }
 
 a {
@@ -55,6 +58,10 @@ p {
   padding: 3rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* Navbar */
 
 #navbar {
@@ -79,12 +86,23 @@ p {
 
 #navbar ul li a {
   color: #fff;
-  padding: 0.25rem;
-  margin-right: 10px;
+  padding: 0.25rem 0;
+  margin-right: 1.75rem;
+  font-size: 1rem;
 }
 
 #navbar ul li a:hover {
   border-bottom: 2px solid #ffe000;
+}
+
+#navbar ul li a.phone {
+  border: 1px solid #fff;
+  padding: 7px 10px;
+}
+
+#navbar ul li a.phone:hover {
+  border: 1px solid #ffe000;
+  color: #ffe000;
 }
 .current {
   border-bottom: 2px solid #ffe000;
@@ -105,6 +123,7 @@ p {
 #main-heading i {
   color: #e31b23;
   transition: transform 0.2s;
+  transition: transform 0.5s;
 }
 #main-heading i:hover {
   transform: scale(1.25);
@@ -132,6 +151,8 @@ p {
   justify-content: space-between;
   align-items: center;
   background-color: #f3f3f3;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 #home .home-container-right {
@@ -139,6 +160,8 @@ p {
   grid-template-columns: 1fr 1fr;
   background-color: #f9f9f9;
   background-color: #f3f3f3;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 #home .home-container-right-left {
@@ -152,8 +175,10 @@ p {
   margin-top: 2rem;
 }
 
-#home .home-container-right-left img {
+#home .home-container-right-left img,
+#home .home-container-right-right img {
   width: 150px;
+  width: 170px;
 }
 
 #home .home-container-right-right {
@@ -163,9 +188,16 @@ p {
   align-items: center;
 }
 
+#home .home-container-right-right div h3 {
+  text-align: center;
+}
+
 address h4 {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-style: normal;
+  font-weight: bolder;
+  margin: auto;
+  text-align: center;
 }
 
 /* Footer */
@@ -179,7 +211,7 @@ address h4 {
 
 #about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr;
   grid-column-gap: 40px;
 }
 
@@ -187,11 +219,14 @@ address h4 {
 #about .about-right {
   height: 100vh;
   background-color: #f3f3f3;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 #about .about-left img {
   display: block;
   margin: 2rem auto;
+  width: 500px;
 }
 
 #about .about-right {
@@ -210,13 +245,15 @@ address h4 {
 
 #services {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-column-gap: 40px;
 }
 
 #services .services-left {
   padding: 1.5rem;
   background-color: #f3f3f3;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 #services .services-left h1,
@@ -229,6 +266,10 @@ address h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 1.5rem;
+  background-color: #f3f3f3;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 #services .services-right img {
@@ -250,10 +291,24 @@ address h4 {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 40px;
 }
-.contact-left {
-  padding: 1.5rem;
-  background-color: #f3f3f3;
+
+.map {
+  display: block;
+  margin: auto;
+  width: 95%;
 }
+
+.contact-left {
+  padding: 2rem;
+  background-color: #f3f3f3;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* .contact-right {
+  padding: 2rem;
+  border-radius: 10px;
+} */
 
 #contact img {
   display: block;
@@ -262,7 +317,13 @@ address h4 {
 }
 
 #contact form {
-  padding: 1.5rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#contact form h3 {
+  text-align: center;
 }
 
 #contact form input,
@@ -292,4 +353,55 @@ address h4 {
   background-color: #000;
   border: 1px solid #000;
   color: #ffe000;
+}
+
+/* testing underline animation */
+/** Hover-related CSS **/
+
+#examples .example {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 0 45px;
+}
+#examples .example .hover {
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+#examples .example .hover:before,
+#examples .example .hover:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #e69500;
+}
+
+#examples .example .hover.hover-3:before {
+  left: 50%;
+}
+#examples .example .hover.hover-3:after {
+  right: 50%;
+}
+
+#examples .example:hover {
+  cursor: pointer;
+}
+#examples .example:hover .hover:before,
+#examples .example:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+#examples .example:hover .hover.hover-3:before,
+#examples .example:hover .hover.hover-3:after {
+  width: 50%;
 }

@@ -6,9 +6,18 @@
     <title>Jane Schade ChildCare</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      rel="stylesheet"
+      media="screen and (max-width: 900px)"
+      href="mobile.css"
+    />
+    <link
         href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
         rel="stylesheet"
       />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
       <script
       src="https://kit.fontawesome.com/b714cb1e0e.js"
       crossorigin="anonymous"
@@ -17,10 +26,10 @@
   <body>
     <nav id="navbar">
       <div class="container">
-        <div>
+        <h1 class="logo">
           <i class="fas fa-home"></i>
           Jane Schade Child Care
-        </div>
+        </h1>
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -34,30 +43,33 @@
           <li>
             <a href="contact.html" class='current'>Contact Us</a>
           </li>
+          <li>
+            <a class="phone" href="tel:+14403335005">440.333.5005</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <div id="contact" class="container py-3">
       <div class="contact-left">
-      <p>From North: Go south of Wagar Road, turn right onto Hilliard Blvd, turn right on next traffic light onto Devon Hill Road. . – directly past Rocky River park and pool.</p>
+      <p><span class='bold'>From North</span>: Go south of Wagar Road, turn right onto Hilliard Blvd, turn right on next traffic light onto Devon Hill Road. . – directly past Rocky River park and pool.</p>
       <br>
       <p>
-        From South: Take 71 South to 480 West (Clague Road Exit), take Clague north to Hilliard Blvd,  turn right onto Hilliard Blvd, turn left onto Devon Hill Road.
+        <span class='bold'>From South</span>: Take 71 South to 480 West (Clague Road Exit), take Clague north to Hilliard Blvd,  turn right onto Hilliard Blvd, turn left onto Devon Hill Road.
       </p>
       <br>
       <p>
-        From East: Take 90 West, get off at Hilliard Blvd Exit, go West (straight) on Hilliard Blvd and turn right onto Devon Hill Road after three traffic lights. – Directly past Rocky River park and pool.
+        <span class='bold'>From East</span>: Take 90 West, get off at Hilliard Blvd Exit, go West (straight) on Hilliard Blvd and turn right onto Devon Hill Road after three traffic lights. – Directly past Rocky River park and pool.
       </p>
       <br>
       <p>
-        From West: Take 90 East, get off at Detroit Road Exit, Take left onto Detroit Road, turn right onto Wagar Road, turn right onto Hilliard Blvd, , turn right on next traffic light onto Devon Hill Road. Directly past Rocky River park and pool.</p>
+        <span>From West</span>: Take 90 East, get off at Detroit Road Exit, Take left onto Detroit Road, turn right onto Wagar Road, turn right onto Hilliard Blvd, , turn right on next traffic light onto Devon Hill Road. Directly past Rocky River park and pool.</p>
       <img src="img/child10.jpg" alt="child" />
     </div>
     <div class="contact-right">
      
     <form action="">
-      <h3>SEND US AN EMAIL</h3>
+      <h3>Send Us an Email</h3>
      <div class='form-group'>
       <label for="first-name">First Name</label>
       <input type="text">
@@ -78,14 +90,14 @@
       <label for="comments">Comments</label>
       <textarea rows="4" cols="50"></textarea> 
       </div>
-      <div class='form-group'>
-      <label for="company">Company</label>
-      <input type="text">
-      </div>
+     
 
       <input type="submit">
     </form>
+    <!-- <div class="map"></div> -->
+    
   </div>
+  <!-- <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.758382056064!2d-81.85985160970006!3d41.46615551087304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830ed5141c0d06b%3A0xf5eedd965513bbe2!2s2734%20Devon%20Hill%20Rd%2C%20Rocky%20River%2C%20OH%2044116!5e0!3m2!1sen!2sus!4v1602386418458!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
     </div>
   
 
@@ -105,5 +117,15 @@
       </div>
     </footer>
   </div>
+  
+  <!-- <script src="js/main.js"></script> -->
+
+  <!-- Google Maps -->
+  <!-- Asynce defer means this can come after main, even though it's used in main -->
+  <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg1bbu3ugfzcJ84xviXnkpdKh3JssqFfw&callback=initMap"
+    async
+    defer
+  ></script> -->
   </body>
 </html>
