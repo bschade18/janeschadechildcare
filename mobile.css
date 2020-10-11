@@ -12,11 +12,45 @@
   #services,
   #contact {
     grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
+  #home .home-container-right-left img,
+  #home .home-container-right-right img {
+    width: 170px;
+    width: 200px;
+    width: 220px;
+    width: 90%;
+  }
+
+  .container {
+    padding: 2rem 2rem;
+    max-width: 820px;
+  }
+
+  #home .home-container-right-right {
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .home-contact {
+    font-size: 1.5rem;
+  }
+
+  #about .about-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
+/* @media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+} */
+
 /* Ipad and below */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #navbar .container {
     flex-direction: column;
     align-items: center;
