@@ -7,6 +7,9 @@
     display: none;
   } */
 
+  #home {
+    padding: 0;
+  }
   #home,
   #about,
   #services,
@@ -43,12 +46,6 @@
   }
 }
 
-/* @media (max-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-} */
-
 /* Ipad and below */
 @media (max-width: 992px) {
   #navbar .container {
@@ -58,6 +55,13 @@
 
   .logo {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 2rem;
+    max-width: 720px;
   }
 }
 
@@ -71,6 +75,16 @@
     margin-bottom: 1rem;
     
   } */
+
+  #home .home-container-right-left,
+  #home .home-container-right img {
+    display: none;
+  }
+
+  #home .home-container-right {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
   .phone {
     display: none;
@@ -87,5 +101,13 @@
 
   #navbar ul li a {
     margin-right: 1rem;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+
+  #copyright {
+    font-size: 12px;
   }
 }
