@@ -342,21 +342,16 @@ address h4.email {
 } */
 
 .contact-left {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #f3f3f3;
   background-color: #fff;
   border-radius: 10px;
 }
 
-/* .contact-right {
-  padding: 2rem;
-  border-radius: 10px;
-} */
-
 #contact img {
   display: block;
-  width: 480px;
-  margin: 2rem auto;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 #contact form {
