@@ -379,6 +379,7 @@ address h4.email {
   background-color: #ffe000;
   border: 1px solid #ffe000;
   color: #000;
+  -webkit-appearance: none;
 }
 
 #contact form input[type='submit']:hover {
