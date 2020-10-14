@@ -325,15 +325,7 @@ address h4.email {
   display: block;
   margin: auto;
   width: 100%;
-  /* padding: 2rem; */
 }
-
-/* .map-container {
-  background-color: #fff;
-  border-radius: 10px;
-  margin-bottom: 2rem; 
-   border: 2px solid black;
-} */
 
 .contact-left {
   padding: 1.5rem;
@@ -379,7 +371,12 @@ address h4.email {
   background-color: #ffe000;
   border: 1px solid #ffe000;
   color: #000;
+}
+
+.submit-btn {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #contact form input[type='submit']:hover {
