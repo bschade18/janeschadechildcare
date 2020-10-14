@@ -104,6 +104,10 @@ p {
   border: 1px solid #ffe000;
   color: #ffe000;
 }
+
+.phone-mobile {
+  display: none;
+}
 .current {
   border-bottom: 2px solid #ffe000;
 }
