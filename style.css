@@ -309,6 +309,7 @@ address h4.email {
 #services .services-right img {
   display: block;
   margin: auto;
+  width: 100%;
 }
 #services ul {
   list-style: none;

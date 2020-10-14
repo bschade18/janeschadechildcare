@@ -7,6 +7,10 @@
     display: none;
   } */
 
+  #services .services-right img:last-child {
+    display: none;
+  }
+
   #home {
     padding: 0;
   }
