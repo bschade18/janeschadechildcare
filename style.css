@@ -266,8 +266,6 @@ address h4.email {
 }
 
 #about .about-right img {
-  width: 210px;
-  width: 235px;
   width: 82%;
 }
 
@@ -288,7 +286,7 @@ address h4.email {
 
 #services .services-left h1,
 #services .services-left h2,
-#services .services-left small {
+#services .services-left h4 {
   padding: 10px 1rem;
 }
 
