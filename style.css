@@ -157,7 +157,6 @@ p {
 }
 
 #main-heading span {
-  /* background: #ffe000; */
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -215,10 +214,6 @@ p {
 #home .home-container-right-right div h3 {
   text-align: center;
 }
-
-/* .home-contact h3 {
-  border-bottom: 2px solid #5d2f86;
-} */
 
 address h4 {
   /* font-family: 'Roboto', sans-serif; */
