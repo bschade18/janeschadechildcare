@@ -74,15 +74,9 @@
 }
 
 @media (max-width: 576px) {
-  /* #navbar ul {
-    flex-direction: column;
-    align-items: center;
-  } */
-  /* 
-  #navbar ul li {
-    margin-bottom: 1rem;
-    
-  } */
+  .services-left h1 {
+    font-size: 24px;
+  }
 
   #home .home-container-right-left,
   #home .home-container-right img {
