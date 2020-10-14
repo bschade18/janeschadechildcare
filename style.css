@@ -248,7 +248,7 @@ address h4.email {
 
 #about .about-left,
 #about .about-right {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #f3f3f3;
   background-color: #fff;
   border-radius: 10px;
@@ -256,20 +256,23 @@ address h4.email {
 
 #about .about-left img {
   display: block;
-  margin: 2rem auto;
+  margin-top: 2rem;
   width: 500px;
+  width: 100%;
 }
 
 #about .about-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
 
 #about .about-right img {
   width: 210px;
-  height: auto;
-  margin: auto;
+  width: 235px;
+  width: 82%;
 }
 
 /* Services */
